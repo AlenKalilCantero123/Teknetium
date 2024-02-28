@@ -1,0 +1,80 @@
+.bannerInfoContainer {
+    
+  display: flex;
+  flex-direction: row;
+  padding: 3rem;
+  justify-content: space-around;
+  gap: 2rem;
+  background: rgb(65, 90, 119);
+  color: white;
+  background: linear-gradient(
+    276deg,
+    rgba(65, 90, 119, 1) 0%,
+    rgba(27, 38, 59, 1) 54%
+  );
+
+  z-index: 1;
+}
+.bannerInfoTitle {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.bannerInfoParagraph {
+  font-size: 1rem;
+  transition: all 0.5s ease;
+  text-align: center;
+  opacity: 0.8;
+}
+.bannerInfoParagraph:hover {
+  font-weight: bolder;
+  opacity: 0.9;
+
+}
+.colorShadowSquare {
+  background: rgb(65, 90, 119);
+  background: linear-gradient(
+    143deg,
+    rgba(65, 90, 119, 1) 0%,
+    rgba(224, 225, 221, 1) 54%
+  );
+  position: absolute;
+  width: 16rem;
+  height: 15rem;
+  top: 9rem;
+  left: 4rem;
+  z-index: 1;
+  border-radius: 2rem;
+}
+.colorShadowCircle {
+  background: rgb(65, 90, 119);
+  background: linear-gradient(
+    143deg,
+    rgba(224, 225, 221, 1) 0%,
+    rgba(65, 90, 119, 1) 54%
+  );
+  position: absolute;
+  width: 17rem;
+  height: 17rem;
+  top: 22rem;
+  left: 22rem;
+  z-index: 1;
+  border-radius: 50%;
+}
+.textContent {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+
+}
+
+
+.bannerInfoImg {
+  width: 29rem;
+  position: relative;
+  height: 23rem;
+  border-radius: 2rem;
+  z-index: 2;
+}
