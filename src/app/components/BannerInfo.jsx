@@ -2,12 +2,16 @@ import React from "react";
 import style from "../styles/BannerInfo.module.css";
 import Image from "next/image";
 import people from "../assets/images/people.jpg"
+import connections from "../assets/images/connections.jpg"
+
 export default function BannerInfo() {
   return (
     <>
       <div className={style.bannerInfoContainer}>
         <div>
         <Image src={people} className={style.bannerInfoImg  }></Image>
+        <Image src={connections} className={style.bannerInfoImg2 }></Image>
+
 <div className={style.colorShadowSquare}></div>
 <div className={style.colorShadowCircle}></div>
 

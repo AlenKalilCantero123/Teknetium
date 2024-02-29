@@ -7,7 +7,7 @@ import style from "../app/styles/page.module.css";
 
 export default function Home() {
   return (
-    <div>
+    <div className="backgroundRoot">
       <Navbar />
       <div className={style.container}>
         <BannerInfo />

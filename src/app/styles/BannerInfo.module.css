@@ -1,20 +1,36 @@
 .bannerInfoContainer {
-    
   display: flex;
   flex-direction: row;
   padding: 3rem;
-  justify-content: space-around;
+  justify-content: flex-end;
   gap: 2rem;
-  background: rgb(65, 90, 119);
   color: white;
-  background: linear-gradient(
-    276deg,
-    rgba(65, 90, 119, 1) 0%,
-    rgba(27, 38, 59, 1) 54%
-  );
-
+  background-image: url(/_next/static/media/backgroundBanner.2696afd6.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
   z-index: 1;
+  transition: all 1s ease;
 }
+
+.bannerInfoContainer:hover .textContent {
+  padding: 1rem;
+}
+.bannerInfoContainer:hover .colorShadowSquare {
+  top: 7rem;
+  left: 3rem;
+}
+
+.bannerInfoContainer:hover .colorShadowCircle {
+  top: 25rem;
+  left: 23rem;
+}
+
+.colorShadowSquare,
+.colorShadowCircle,
+.textContent {
+  transition: all 1s ease-in-out;
+}
+
 .bannerInfoTitle {
   font-size: 2rem;
   font-weight: bold;
@@ -23,12 +39,17 @@
   font-size: 1rem;
   transition: all 0.5s ease;
   text-align: center;
-  opacity: 0.8;
+  font-weight: 700;
+  opacity: 0.9;
+  width: fit-content;
+  line-height: 2rem;
+  word-wrap: none;
+  transition: all 0.5s ease;
+  word-break: break-all;
 }
 .bannerInfoParagraph:hover {
-  font-weight: bolder;
-  opacity: 0.9;
-
+  opacity: 1;
+  color: white;
 }
 .colorShadowSquare {
   background: rgb(65, 90, 119);
@@ -43,9 +64,13 @@
   top: 9rem;
   left: 4rem;
   z-index: 1;
+  box-shadow: 0 4px 2px 0px #0a0a0a66;
   border-radius: 2rem;
 }
+
 .colorShadowCircle {
+  box-shadow: 0 4px 2px 0px #0a0a0a66;
+
   background: rgb(65, 90, 119);
   background: linear-gradient(
     143deg,
@@ -60,21 +85,37 @@
   z-index: 1;
   border-radius: 50%;
 }
+
 .textContent {
   width: 40%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding: 1.5rem;
+  text-align: center;
   border-radius: 0.5rem;
-
+  transition: all 0.2s ease-in-out;
 }
 
-
 .bannerInfoImg {
-  width: 29rem;
-  position: relative;
-  height: 23rem;
+  width: 18rem;
+  position: absolute;
+  height: 17rem;
   border-radius: 2rem;
   z-index: 2;
+  top: 10rem;
+  left: 6rem;
+  box-shadow: 0 4px 2px 0px #0a0a0a66;
+}
+.bannerInfoImg2 {
+  width: 23rem;
+  position: absolute;
+  height: 15rem;
+  border-top-left-radius: 4rem;
+  border-bottom-right-radius: 4rem;
+  top: 26rem;
+  left: 13rem;
+  border-bottom-left-radius: 4rem;
+  z-index: 3;
+  box-shadow: -5px -4px 13px 6px #0a0a0a1f;
 }

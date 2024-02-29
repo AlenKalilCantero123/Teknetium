@@ -6,6 +6,14 @@
   font-weight: 200;
   font-style: normal;
 }
+.backgroundRoot {
+  background: rgb(55, 32, 98);
+  background: radial-gradient(
+    circle,
+    rgba(55, 32, 98, 1) 0%,
+    rgba(49, 94, 147, 1) 100%
+  );
+}
 *,
 :root {
   --default-font: "Montserrat", sans-serif;

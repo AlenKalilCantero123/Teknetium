@@ -12,6 +12,11 @@
     width: 100%;
     justify-content: center;
 }
+.teknetiumLogo{
+    width: 15rem;
+    height: 3rem;
+    padding-left: 1rem;
+}
 .navbarContainer{
     display: flex;
     flex-direction: row;
@@ -19,7 +24,7 @@
     width: 100%;
     justify-content: center;
     height: 5rem;
-    box-shadow: 0 4px 2px -2px gray;
+    box-shadow: 0 4px 2px 0px #0a0a0a66;
     align-items: center;
     background: #0d1b2a;
     color: white;
