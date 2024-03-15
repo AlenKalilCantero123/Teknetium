@@ -1,0 +1,170 @@
+.services {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  padding: 1rem;
+  align-items: flex-start;
+}
+.element {
+  width: 100%;
+  background: radial-gradient(
+    circle,
+    rgb(55 32 98 / 67%) 0%,
+    rgb(49 94 147 / 75%) 100%
+  );
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: row;
+  height: 14rem; /* Set a fixed initial height */
+  transition: background 0.5s ease-in-out, height 2s ease-in-out,
+   ;
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.element:hover {
+  font-style: italic;
+  background: radial-gradient(
+    circle,
+    rgb(111, 50, 139) 0%,
+    rgb(49 94 147 / 100%) 100%
+  );
+  height: 23rem; /* Change the height on hover */
+  transition-duration: 2s; /* Adjust the transition duration */
+}
+
+.descriptionTeknetium {
+  position: relative; /* Set position to relative */
+  padding: 3rem;
+  transition: all 5s ease;
+  background-image: url("../assets/images/backgroundBanner.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  font-weight: 500;
+  margin: 2rem;
+  border-bottom-left-radius: 5rem;
+  border-top-right-radius: 5rem;
+  letter-spacing: 2px;
+  text-align: center;
+  opacity: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.rocket {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.5s ease; /* Added transition property */
+}
+
+.descriptionTeknetium:hover {
+  border-bottom-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+  border-top-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.descriptionTeknetium:hover .rocket {
+  transform: translate(1rem, -1rem);
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 2rem;
+  color: white;
+}
+.img {
+  width: 50%;
+  border-radius: 0.6rem;
+  height: 100%;
+}
+.elementColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.cloud {
+  width: 3rem;
+  height: 3rem;
+}
+.consultation {
+  width: 5rem;
+  height: 4rem;
+}
+.support {
+  width: 5rem;
+  height: 3.5rem;
+}
+.monitoring {
+  width: 5rem;
+  height: 3rem;
+}
+.networking {
+  width: 5rem;
+  height: 3rem;
+}
+.security {
+  width: 5rem;
+  height: 4rem;
+}
+.vmware {
+  width: 7rem;
+  height: 4rem;
+}
+.veeam {
+  width: 11rem;
+  height: 4rem;
+}
+.project {
+  width: 3rem;
+  height: 2.5rem;
+}
+.iconTitle {
+  font-weight: bold;
+}
+.linux {
+  width: 4rem;
+  height: 2rem;
+}
+.azure {
+  width: 4rem;
+  height: 2rem;
+}
+.aws {
+  width: 4rem;
+  height: 2rem;
+}
+.devs {
+  width: 5rem;
+  height: 4rem;
+}
+.infrastructure {
+  width: 5rem;
+  height: 3rem;
+}
+.microsoft {
+  width: 5rem;
+  height: 2rem;
+}
+.headerElement {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}

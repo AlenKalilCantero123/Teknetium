@@ -1,17 +1,19 @@
-import Image from "next/image";
-import styles from "./styles/page.module.css";
+import BannerInfo from "./components/BannerInfo";
+import BrandCarousel from "./components/BrandCarousel";
+import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Slider from "./components/SliderCarousel";
-import BannerInfo from "./components/BannerInfo";
-import style from "../app/styles/page.module.css";
+import styles from "./styles/page.module.css";
 
 export default function Home() {
   return (
-    <div className="backgroundRoot">
+    <div>
       <Navbar />
-      <div className={style.container}>
+      <div className={styles.container}>
         <BannerInfo />
+        <BrandCarousel />
         <Slider />
+        <Footer></Footer>
       </div>
     </div>
   );

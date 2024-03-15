@@ -1,24 +1,51 @@
-import React from "react";
-import style from "../styles/Navbar.module.css";
-import search from "../assets/search-svgrepo-com.svg";
+import Link from "next/link";
 import logo from "../assets/images/teknetiumfirma.png";
+import style from "../styles/Navbar.module.css";
 
 import Image from "next/image";
-export default function Navbar() {
+export default function Navbar(route) {
+  console.log(route.route);
   return (
     <div className={style.navbarContainer}>
-        <Image src={logo} alt={"logo"}   className={style.teknetiumLogo} />
-      <div className={style.searchContainer}>
-        <input className={style.searchInput} />
-        <button className={style.searchBtn}>
-          {" "}
-          <Image src={search} alt={""} height={25} width={25} />
-        </button>
+      <div>
+        <Image src={logo} alt="logo" className={style.teknetiumLogo} />
       </div>
+
       <div className={style.linkContainer}>
-        <div>About Us</div>
-        <div>Contact</div>
-        <div>Services</div>
+        {route.route === "/home" || route.route === "/" ? (
+          <>
+            <div className={style.styledPath}>
+              <Link href="/home">Home</Link>
+              <div className={style.styleLine}></div>
+            </div>
+          </>
+        ) : (
+          <Link href="/home">Home</Link>
+        )}
+        {route.route === "/service" ? (
+          <div className={style.styledPath}>
+            <Link href="/service">Services</Link>
+            <div className={style.styleLine}></div>
+          </div>
+        ) : (
+          <Link href="/service">Services</Link>
+        )}
+        {route.route === "/contact" ? (
+          <div className={style.styledPath}>
+            <Link href="/contact">Contact</Link>
+            <div className={style.styleLine}></div>
+          </div>
+        ) : (
+          <Link href="/contact">Contact</Link>
+        )}
+        {route.route === "/aboutus" ? (
+          <div className={style.styledPath}>
+            <Link href="/aboutus">About Us</Link>
+            <div className={style.styleLine}></div>
+          </div>
+        ) : (
+          <Link href="/aboutus">About Us</Link>
+        )}
       </div>
     </div>
   );

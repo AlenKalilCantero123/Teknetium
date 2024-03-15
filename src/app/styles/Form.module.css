@@ -1,0 +1,168 @@
+.form {
+    border-radius: 0.75rem; /* Equivalent to rounded-lg */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* Equivalent to shadow-xl */
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    padding-top: 2rem; /* Equivalent to py-8 */
+    padding-bottom: 2rem; /* Equivalent to py-8 */
+    background-image: url("../assets/images/backgroundBanner2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    width: 100%;
+    margin: 2rem;
+    z-index: 1;
+
+  }
+  
+  .dark .form {
+    background-color: #2563eb; /* Equivalent to dark:bg-blue-500 */
+  }
+  .sendTitle {
+    font-size: 1.875rem; /* Equivalent to text-2xl */
+    font-weight: 700; /* Equivalent to font-bold */
+  }
+  
+  .dark .sendTitle {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+    
+  .fullName {
+    color: white;
+    /* Equivalent to text-gray-500 */
+    font-weight: 300; /* Equivalent to font-light */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+  }
+  
+  .dark .fullName {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+  
+  .spanFullName {
+    color: #ffffff; /* Equivalent to text-red-500 */
+  }
+  
+  .dark .spanFullName {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+
+  .inputForm {
+    background-color: #6dbdff54; 
+    /* Equivalent to bg-transparent */
+    margin-top: 1rem;
+    border-bottom-width: 1px; /* Equivalent to border-b */
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-left: 1rem; /* Equivalent to pl-4 */
+    outline: none; /* Equivalent to focus:outline-none */
+    height: 2rem;
+    color: white;
+    border-radius: 0.25rem; /* Equivalent to focus:rounded-md */
+  }
+  
+  .inputForm:focus {
+    border-color: #34d399; /* Equivalent to ring-green-500 */
+    box-shadow: 0 0 0 1px #34d399; /* Equivalent to focus:ring-1 */
+  }
+  
+  .inputForm::placeholder {
+    color: #6b7280; /* Equivalent to text-gray-500 */
+  }
+  
+  .dark .inputForm {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+  
+  .dark .inputForm::placeholder {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+  
+  .textAreaForm {
+    background-color: #6dbdff54; 
+    margin-top: 1rem;
+
+    color: white; /* Equivalent to bg-transparent */
+    border-bottom-width: 1px; /* Equivalent to border-b */
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-left: 1rem; /* Equivalent to pl-4 */
+    outline: none; /* Equivalent to focus:outline-none */
+    min-height: 8rem;
+    border-radius: 0.25rem; /* Equivalent to focus:rounded-md */
+  }
+  
+  .textAreaForm:focus {
+    border-color: #34d399; /* Equivalent to ring-green-500 */
+    box-shadow: 0 0 0 1px #34d399; /* Equivalent to focus:ring-1 */
+  }
+  
+  .textAreaForm::placeholder {
+    color: #6b7280; /* Equivalent to text-gray-500 */
+  }
+  
+  .dark .textAreaForm {
+    color: #d1d5db; /* Equivalent to font-light and dark:text-gray-50 */
+  }
+  
+  .dark .textAreaForm::placeholder {
+    color: #d1d5db; /* Equivalent to dark:text-gray-50 */
+  }
+.banner{
+    width: 100%;
+    color: white;
+    vertical-align: middle;
+    z-index: 2;
+    font-size: 2.4rem;font-weight: bolder;
+    padding: 1rem;
+}
+.svgForm {
+    color: #39B7CD; /* text-cyan-500 */
+    margin-left: 0.5rem; /* ml-2 */
+}
+
+  .backgroundDivider{
+    width: 100%;
+    position: absolute;
+    height: 25rem;
+    top: 0;
+ 
+      background-image: url("../assets/images/hexagons.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.774);
+    z-index: 1;
+    opacity: 0.9;
+  }
+ 
+  .sendBox {
+    display: flex; /* Equivalent to flex */
+    flex-direction: row; /* Equivalent to flex-row */
+    align-items: center; /* Equivalent to items-center */
+    justify-content: flex-start; /* Equivalent to justify-start */
+  }
+  .btnSend {
+    padding-left: 2.5rem; /* Equivalent to px-10 */
+    padding-right: 2.5rem; /* Equivalent to px-10 */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 */
+    background: radial-gradient(
+    circle,
+    rgb(55 32 98 / 67%) 0%,
+    rgb(49 94 147 / 75%) 100%
+  );
+    color: #FFFFFF; /* Equivalent to text-gray-50 */
+    font-weight: 300; /* Equivalent to font-light */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    font-size: 1.125rem; /* Equivalent to text-lg */
+    display: flex; /* Equivalent to flex */
+    flex-direction: row; /* Equivalent to flex-row */
+    align-items: center; /* Equivalent to items-center */
+  }
+  
+  .formContainer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+  }

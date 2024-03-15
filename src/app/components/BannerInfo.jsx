@@ -1,22 +1,21 @@
 import React from "react";
 import style from "../styles/BannerInfo.module.css";
 import Image from "next/image";
-import people from "../assets/images/people.jpg"
-import connections from "../assets/images/connections.jpg"
+import people from "../assets/images/people.jpg";
+import connections from "../assets/images/connections.jpg";
 
 export default function BannerInfo() {
   return (
     <>
       <div className={style.bannerInfoContainer}>
         <div>
-        <Image src={people} className={style.bannerInfoImg  }></Image>
-        <Image src={connections} className={style.bannerInfoImg2 }></Image>
+          <Image src={people} alt="banner" className={style.bannerInfoImg}></Image>
+          <Image src={connections} alt="connections" className={style.bannerInfoImg2}></Image>
 
-<div className={style.colorShadowSquare}></div>
-<div className={style.colorShadowCircle}></div>
-
+          <div className={style.colorShadowSquare}></div>
+          <div className={style.colorShadowCircle}></div>
         </div>
-        <div  className={style.textContent}>
+        <div className={style.textContent}>
           <div className={style.bannerInfoTitle}>Technetium IT Solutions</div>
           <p className={style.bannerInfoParagraph}>
             Revolutionize Your IT Infrastructure with Our Extensive Suite of

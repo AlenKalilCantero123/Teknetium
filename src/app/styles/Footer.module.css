@@ -1,0 +1,66 @@
+.containerData {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  color: white;
+  align-items: center;
+  width: 100%;
+  justify-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 14rem;
+  background: rgb(21, 23, 31);
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding-top: 1rem;
+}
+
+.icon {
+  align-self: flex-start;
+}
+.hr {
+  width: 90%;
+}
+.copyright {
+  color: white;
+}
+.infoContainer {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 30% 30% 40%;
+  align-items: start;
+}
+.phone {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  width: 100%;
+}
+.linkIcons {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+}
+.getInTouch {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  align-items: center;
+}
+.titleLinkLabel {
+  font-weight: bold;
+}
+.phoneAddress{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    align-items: center;
+}

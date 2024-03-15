@@ -1,14 +1,17 @@
 .sliderElement {
-    height: 29rem;
+    height: fit-content;
     display: flex !important;
     flex-direction: column;
     justify-content: flex-start;
     padding: 1rem;
-    background: #f3f3f3;
+    background: rgb(55, 32, 98);
+    background:radial-gradient(circle, rgb(34 29 43 / 23%) 0%, rgb(0 37 80 / 26%) 100%);
     border-radius: 4%;
     width: calc(100% - 10%) !important;
     align-items: center;
+    color: white;
 }
+
 .sliderContainer {
   display: flex;
   flex-direction: column;
@@ -18,10 +21,30 @@
 .slider {
   display: flex;
   justify-content: center;
-  width: 98%;
+  width: 100%;
 }
 .img{
     border-radius: 2%;
     width: 100%;
     height: 13rem;
+}
+.description{
+  padding: 0.5rem;
+}
+.subtitle{
+  padding: 0.5rem;
+
+}
+
+.svg {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.title{
+  padding: 0.5rem;
+
 }

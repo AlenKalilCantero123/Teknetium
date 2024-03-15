@@ -1,0 +1,35 @@
+.imgTeknetium{
+margin-top: 1.5rem;
+transition: height 2s ease, width 2s ease; /* Combine both transitions */
+
+}
+
+.img{
+    border-radius: 1rem;
+transition: height 2s ease, width 2s ease; /* Combine both transitions */
+
+}
+
+    
+  
+.sliderContainer{
+    height: 10rem;
+    display: flex;margin-top: 1rem;
+    align-items: center;
+}
+.brandsTitle {
+    background: rgb(25, 59, 98);
+    color: white;
+    display: flex;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 4rem;
+    transition: height 2s ease, font-size 2s ease; /* Combine both transitions */
+}
+
+.brandsTitle:hover {
+    height: 5rem;
+    font-size: 2.1rem;
+}

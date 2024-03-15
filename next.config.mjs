@@ -1,4 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {};
 
-export default nextConfig;
+// next.config.mjs
+
+export default {
+    ...nextConfig,
+    async redirects() {
+      return [
+        {
+          source: '/',
+          destination: '/home',
+          permanent: true, // 301 redirect (permanent)
+        },
+      ];
+    },
+};

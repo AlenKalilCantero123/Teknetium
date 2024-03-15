@@ -1,9 +1,29 @@
-import React from 'react'
+"use client";
 
+import Navbar from "../components/Navbar";
+import Slider from "../components/SliderCarousel";
+import BannerInfo from "../components/BannerInfo";
+import style from "../../app/styles/page.module.css";
+import { usePathname } from "next/navigation";
 
-export default function Home2() {
+import BrandCarousel from "../components/BrandCarousel";
+import Footer from "../components/Footer";
+
+export default function Home() {
+  const pathname = usePathname();
+
   return (
-    <div>Home</div>
-  )
+    <>
+      <div className="backgroundRoot">
+        <Navbar route={pathname}></Navbar>
+
+        <div className={style.container}>
+          <BannerInfo />
+          <BrandCarousel />
+          <Slider />
+          <Footer></Footer>
+        </div>
+      </div>
+    </>
+  );
 }
-    

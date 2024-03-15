@@ -1,48 +1,66 @@
-.searchContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
+.searchContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
 }
-.linkContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    width: 100%;
-    justify-content: center;
+.linkContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 46%;
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: none;
+  color: white;
 }
-.teknetiumLogo{
-    width: 15rem;
-    height: 3rem;
-    padding-left: 1rem;
+.teknetiumLogo {
+  width: 15rem;
+  height: 3rem;
+  padding-left: 1rem;
 }
-.navbarContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
+.styledPath {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+.styleLine {
     width: 100%;
-    justify-content: center;
-    height: 5rem;
-    box-shadow: 0 4px 2px 0px #0a0a0a66;
-    align-items: center;
-    background: #0d1b2a;
-    color: white;
+    height: 0.3rem;
+    background: white;
+    opacity: 0.7;
+}
+.navbarContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  justify-content: space-between;
+  height: 5rem;
+  box-shadow: 0 4px 2px 0px #0a0a0a66;
+  align-items: center;
+  background: #0d1b2a;
+  color: white;
 
+  z-index: 2;
 }
-.searchBtn{
-    background: none;
-    border-radius: 0px;
-    padding: 0px;
-    margin: 0px;
-    border: none;
+.searchBtn {
+  background: none;
+  border-radius: 0px;
+  padding: 0px;
+  margin: 0px;
+  border: none;
 }
-.searchInput{
-    border-radius: 0.5rem;
-    width: 14rem;
-    height: 2rem;
+.searchInput {
+  border-radius: 0.5rem;
+  width: 14rem;
+  height: 2rem;
 }
 
-.searchIcon{
-    fill: #242424;
+.searchIcon {
+  fill: #242424;
 }

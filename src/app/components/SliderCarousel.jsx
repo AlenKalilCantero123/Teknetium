@@ -12,11 +12,13 @@ import Slider from "react-slick";
 export default function SliderCarousel() {
   var settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     autoplay: true,
     autoplaySpeed: 2500,
     adaptiveHeight: true,
     dotsClass: "slick-dots",
+    arrows: false,
+
     slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
@@ -27,7 +29,7 @@ export default function SliderCarousel() {
           autoplay: true,
           autoplaySpeed: 2500,
           slidesToScroll: 3,
-          infinite: true,
+          infinite: false,
           dots: true,
           dotsClass: "slick-dots",
         },
@@ -56,42 +58,42 @@ export default function SliderCarousel() {
   const services = [
     {
       description:
-        "ustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE C",
       subtitle: "variations cba ",
       service_image: wires,
     },
     {
       description:
-        " to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE B",
       subtitle: "variations bca",
       service_image: racks,
     },
     {
       description:
-        "t the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It use",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE A",
       subtitle: "variations abc",
       service_image: modem,
     },
     {
       description:
-        "ustry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publ",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE C",
       subtitle: "variations cba ",
       service_image: wires,
     },
     {
       description:
-        " to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE B",
       subtitle: "variations bca",
       service_image: racks,
     },
     {
       description:
-        "t the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It use",
+        "     to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now ",
       title: "SERVICE A",
       subtitle: "variations abc",
       service_image: modem,
@@ -99,24 +101,20 @@ export default function SliderCarousel() {
   ];
   return (
     <>
-      Services
+ 
       <div className={style.slider}>
         <Slider className={style.sliderContainer} {...settings}>
           {services.map((e, index) => {
             return (
               <div className={style.sliderElement} key={index}>
-                <h3>{e.title}</h3>
                 <div>
-                  <p>
-                    <Image
-                      src={e.service_image}
-                    
-                      className={style.img}
-                      alt={e.title}
-                    ></Image>
-                    {e.subtitle} <br />
-                    {e.description}
-                  </p>
+                  <Image
+                    src={e.service_image}
+                    className={style.img}
+                    alt={e.title}
+                  ></Image>
+                  <p className={style.subtitle}>{e.subtitle}</p>
+                  <p className={style.description}>{e.description}</p>
                 </div>
               </div>
             );
